@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Figure 1 - Context Diagram - AgentA AI Skill Coach</title>
+<title>Figure 1 - Context Diagram - AgentA</title>
 <style>
   html, body { background: #FFF; color: #000; margin: 0; padding: 0; }
   body { font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; }
@@ -27,15 +27,15 @@
 <div class="page">
 
   <div class="doc-header">
-    <span>AgentA AI Skill Coach</span>
+    <span>AgentA</span>
     <span>Data Flow Diagrams</span>
   </div>
 
   <h1>CONTEXT DIAGRAM</h1>
 
   <div class="figure">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img"
-         aria-label="Context diagram: process 0 AgentA AI Skill Coach exchanges data with End User, AI Service (Online), Email, and Device."
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img"
+         aria-label="Context diagram: process 0 AgentA exchanges data with the End User."
          font-family="Arial, Helvetica, sans-serif" fill="#000">
       <defs>
         <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10"
@@ -44,79 +44,44 @@
         </marker>
       </defs>
 
-      <rect x="0" y="0" width="900" height="520" fill="#FFF" stroke="none"/>
+      <rect x="0" y="0" width="900" height="340" fill="#FFF" stroke="none"/>
 
-      <!-- Data flows -->
+      <!-- Data flows: End User to process 0 -->
       <g stroke="#000" stroke-width="1.5" fill="none">
-        <!-- End User to process 0 -->
-        <line x1="150" y1="150" x2="340" y2="150" marker-end="url(#arrow)"/>
-        <line x1="150" y1="182" x2="340" y2="182" marker-end="url(#arrow)"/>
-        <line x1="150" y1="214" x2="340" y2="214" marker-end="url(#arrow)"/>
-        <line x1="150" y1="246" x2="340" y2="246" marker-end="url(#arrow)"/>
-        <!-- process 0 to End User -->
-        <line x1="340" y1="278" x2="150" y2="278" marker-end="url(#arrow)"/>
-        <line x1="340" y1="310" x2="150" y2="310" marker-end="url(#arrow)"/>
-        <!-- process 0 to AI Service (Online) -->
-        <line x1="560" y1="150" x2="750" y2="150" marker-end="url(#arrow)"/>
-        <line x1="560" y1="182" x2="750" y2="182" marker-end="url(#arrow)"/>
-        <line x1="560" y1="214" x2="750" y2="214" marker-end="url(#arrow)"/>
-        <!-- AI Service (Online) to process 0 -->
-        <line x1="750" y1="278" x2="560" y2="278" marker-end="url(#arrow)"/>
-        <line x1="750" y1="310" x2="560" y2="310" marker-end="url(#arrow)"/>
-        <line x1="750" y1="342" x2="560" y2="342" marker-end="url(#arrow)"/>
-        <!-- process 0 to Email -->
-        <line x1="420" y1="120" x2="420" y2="70" marker-end="url(#arrow)"/>
-        <!-- Email to process 0 -->
-        <line x1="480" y1="70" x2="480" y2="120" marker-end="url(#arrow)"/>
-        <!-- process 0 to Device -->
-        <line x1="420" y1="360" x2="420" y2="450" marker-end="url(#arrow)"/>
-        <!-- Device to process 0 -->
-        <line x1="480" y1="450" x2="480" y2="360" marker-end="url(#arrow)"/>
+        <line x1="210" y1="130" x2="600" y2="130" marker-end="url(#arrow)"/>
+        <line x1="210" y1="146" x2="600" y2="146" marker-end="url(#arrow)"/>
+        <line x1="210" y1="162" x2="600" y2="162" marker-end="url(#arrow)"/>
+        <line x1="210" y1="178" x2="600" y2="178" marker-end="url(#arrow)"/>
+        <line x1="210" y1="194" x2="600" y2="194" marker-end="url(#arrow)"/>
+        <!-- Data flow: process 0 back to End User -->
+        <line x1="600" y1="210" x2="210" y2="210" marker-end="url(#arrow)"/>
       </g>
 
-      <!-- Flow labels -->
-      <g font-size="12">
-        <!-- left side -->
-        <text x="245" y="143" text-anchor="middle">Sign-in details</text>
-        <text x="245" y="175" text-anchor="middle">Sign-up details</text>
-        <text x="245" y="207" text-anchor="middle">Chat message</text>
-        <text x="245" y="239" text-anchor="middle">Image prompt</text>
-        <text x="245" y="271" text-anchor="middle">AI reply</text>
-        <text x="245" y="303" text-anchor="middle">Generated image</text>
-        <!-- right side -->
-        <text x="655" y="143" text-anchor="middle">Chat request</text>
-        <text x="655" y="175" text-anchor="middle">Image request</text>
-        <text x="655" y="207" text-anchor="middle">Model file request</text>
-        <text x="655" y="271" text-anchor="middle">AI reply</text>
-        <text x="655" y="303" text-anchor="middle">Generated image</text>
-        <text x="655" y="335" text-anchor="middle">AI model file</text>
-        <!-- top -->
-        <text x="412" y="100" text-anchor="end">Code request</text>
-        <text x="488" y="100" text-anchor="start">One-time code</text>
-        <!-- bottom -->
-        <text x="412" y="410" text-anchor="end">Unlock request</text>
-        <text x="488" y="410" text-anchor="start">Unlock result</text>
+      <!-- External entity -->
+      <rect x="30" y="142" width="120" height="56" fill="#FFF" stroke="#000" stroke-width="1.5"/>
+      <text x="90" y="175" text-anchor="middle" font-size="13" font-weight="700">End User</text>
+
+      <!-- Connector carrying the flows to the small End User box -->
+      <g stroke="#000" stroke-width="1.5" fill="none">
+        <line x1="150" y1="170" x2="210" y2="170"/>
+        <line x1="210" y1="130" x2="210" y2="210"/>
       </g>
-
-      <!-- External entities -->
-      <rect x="20" y="120" width="130" height="240" fill="#FFF" stroke="#000" stroke-width="1.5"/>
-      <text x="85" y="245" text-anchor="middle" font-size="13" font-weight="700">End User</text>
-
-      <rect x="750" y="120" width="130" height="240" fill="#FFF" stroke="#000" stroke-width="1.5"/>
-      <text x="815" y="235" text-anchor="middle" font-size="13" font-weight="700">AI Service</text>
-      <text x="815" y="253" text-anchor="middle" font-size="13" font-weight="700">(Online)</text>
-
-      <rect x="380" y="20" width="140" height="50" fill="#FFF" stroke="#000" stroke-width="1.5"/>
-      <text x="450" y="50" text-anchor="middle" font-size="13" font-weight="700">Email</text>
-
-      <rect x="380" y="450" width="140" height="50" fill="#FFF" stroke="#000" stroke-width="1.5"/>
-      <text x="450" y="480" text-anchor="middle" font-size="13" font-weight="700">Device</text>
 
       <!-- Process 0 -->
-      <rect x="340" y="120" width="220" height="240" fill="#FFF" stroke="#000" stroke-width="1.5"/>
-      <line x1="340" y1="146" x2="560" y2="146" stroke="#000" stroke-width="1.5"/>
-      <text x="450" y="139" text-anchor="middle" font-size="13" font-weight="700">0</text>
-      <text x="450" y="258" text-anchor="middle" font-size="15" font-weight="700">AgentA AI Skill Coach</text>
+      <rect x="600" y="125" width="200" height="90" fill="#FFF" stroke="#000" stroke-width="1.5"/>
+      <line x1="600" y1="151" x2="800" y2="151" stroke="#000" stroke-width="1.5"/>
+      <text x="700" y="144" text-anchor="middle" font-size="13" font-weight="700">0</text>
+      <text x="700" y="188" text-anchor="middle" font-size="15" font-weight="700">AgentA</text>
+
+      <!-- Flow labels -->
+      <g font-size="12" text-anchor="middle">
+        <text x="405" y="124">sign-up details</text>
+        <text x="405" y="140">sign-in details</text>
+        <text x="405" y="156">chat message</text>
+        <text x="405" y="172">profile details</text>
+        <text x="405" y="188">reset request</text>
+        <text x="405" y="204">results</text>
+      </g>
     </svg>
   </div>
 
@@ -125,24 +90,16 @@
   <div class="narrative">
     <h2>Narrative Flow of Data</h2>
     <p>
-      Figure 1 shows the AgentA AI Skill Coach system as one process, numbered 0, together with the
-      four outside parties it exchanges data with. The End User signs in or creates an account by
-      sending sign-in details and sign-up details to process 0, and while using the app the same
-      user sends chat messages and image prompts. Process 0 answers the End User with AI replies
-      and generated images. When the phone is online, process 0 sends chat requests, image
-      requests, and model file requests to the AI Service (Online), and the AI Service returns AI
-      replies, generated images, and the AI model file in response. When a password is forgotten,
-      process 0 sends a code request to Email, and Email returns a one-time code that the user
-      types back into the app to set a new password. Process 0 also asks the Device to check the
-      user's fingerprint or face by sending an unlock request, and the Device answers with the
-      unlock result that lets the user back into the app. Every action shown here begins with the
-      End User, and every answer reaches the End User through process 0.
+      The End User is the only person outside the system. The End User sends its sign-up
+      details, sign-in details, chat message, profile details and reset request into AgentA to
+      sign up, sign in, chat, manage the profile and account, and recover a forgotten password.
+      AgentA checks each request and sends the results back to the End User.
     </p>
   </div>
 
   <div class="doc-footer">
-    <span>AgentA AI Skill Coach | Data Flow Diagrams</span>
-    <span>Page 1 of 9</span>
+    <span>AgentA | Data Flow Diagrams</span>
+    <span>Page 1 of 7</span>
   </div>
 
 </div>

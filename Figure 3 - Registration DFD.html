@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Figure 4 - Registration DFD - AgentA AI Skill Coach</title>
+<title>Figure 3 - Registration DFD (Process 1.0) - AgentA</title>
 <style>
   body { font-family: "Times New Roman", Georgia, serif; color:#000; background:#fff; max-width:1180px; margin:0 auto; padding:28px 32px; }
   .hdr { display:flex; justify-content:space-between; font-size:13px; padding-bottom:6px; border-bottom:1px solid #000; }
@@ -19,11 +19,11 @@
 </head>
 <body>
 
-<div class="hdr"><span>AgentA AI Skill Coach</span><span>Data Flow Diagrams</span></div>
+<div class="hdr"><span>AgentA</span><span>Data Flow Diagrams</span></div>
 
-<h1>LEVEL 2 DFD PROCESS 2.0 (REGISTRATION)</h1>
+<h1>LEVEL 2 DFD PROCESS 1.0 (REGISTRATION)</h1>
 
-<svg viewBox="0 0 1120 620" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Level 2 DFD of process 2.0 Registration">
+<svg viewBox="0 0 1120 620" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Level 2 DFD of process 1.0 Registration">
   <defs>
     <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L7,3 L0,6 z" fill="#000"/>
@@ -33,68 +33,67 @@
   <!-- ============ SHAPES ============ -->
 
   <!-- End User (external entity, left edge) -->
-  <rect class="bp" x="40" y="250" width="100" height="160"/>
-  <text x="90" y="334" font-size="12" text-anchor="middle">End User</text>
+  <rect class="bp" x="40" y="304" width="120" height="56"/>
+  <text x="100" y="336" font-size="12" text-anchor="middle">End User</text>
 
-  <!-- Processes 2.1 - 2.3 -->
+  <!-- Processes 1.1 - 1.3 -->
   <g>
     <rect class="bp" x="260" y="300" width="170" height="64"/>
     <line class="bp" x1="260" y1="322" x2="430" y2="322"/>
-    <text x="269" y="316" font-size="10.5" font-weight="bold">2.1</text>
+    <text x="269" y="316" font-size="10.5" font-weight="bold">1.1</text>
     <text x="345" y="349" font-size="11.5" text-anchor="middle">Enter Sign-Up Details</text>
   </g>
   <g>
     <rect class="bp" x="510" y="300" width="170" height="64"/>
     <line class="bp" x1="510" y1="322" x2="680" y2="322"/>
-    <text x="519" y="316" font-size="10.5" font-weight="bold">2.2</text>
+    <text x="519" y="316" font-size="10.5" font-weight="bold">1.2</text>
     <text x="595" y="349" font-size="11.5" text-anchor="middle">Submit Registration</text>
   </g>
   <g>
     <rect class="bp" x="760" y="300" width="170" height="64"/>
     <line class="bp" x1="760" y1="322" x2="930" y2="322"/>
-    <text x="769" y="316" font-size="10.5" font-weight="bold">2.3</text>
+    <text x="769" y="316" font-size="10.5" font-weight="bold">1.3</text>
     <text x="845" y="349" font-size="11.5" text-anchor="middle">Display Recovery Code</text>
   </g>
 
   <!-- Data store -->
   <g>
-    <rect class="bp" x="510" y="180" width="170" height="46"/>
-    <line class="bp" x1="550" y1="180" x2="550" y2="226"/>
+    <path class="bp" d="M510,180 H680 M510,226 H680 M510,180 V226 M550,180 V226"/>
     <text x="530" y="208" font-size="10.5" font-weight="bold" text-anchor="middle">D1</text>
     <text x="615" y="208" font-size="10.5" text-anchor="middle">User Accounts</text>
   </g>
 
   <!-- ============ FLOWS ============ -->
 
-  <line class="flw" x1="140" y1="332" x2="260" y2="332" marker-end="url(#a)"/>
+  <line class="flw" x1="160" y1="332" x2="260" y2="332" marker-end="url(#a)"/>
   <line class="flw" x1="430" y1="332" x2="510" y2="332" marker-end="url(#a)"/>
   <line class="flw" x1="680" y1="332" x2="760" y2="332" marker-end="url(#a)"/>
   <line class="flw" x1="595" y1="300" x2="595" y2="226" marker-end="url(#a)"/>
-  <polyline class="flw" points="845,364 845,470 90,470 90,410" marker-end="url(#a)"/>
+  <polyline class="flw" points="845,364 845,470 100,470 100,360" marker-end="url(#a)"/>
 
   <!-- ============ FLOW LABELS ============ -->
-  <text class="fl" x="200" y="326" text-anchor="middle">Sign-up details</text>
+  <text class="fl" x="210" y="326" text-anchor="middle">Sign-up details</text>
   <text class="fl" x="470" y="326" text-anchor="middle">Completed form</text>
   <text class="fl" x="720" y="326" text-anchor="middle">Account created</text>
   <text class="fl" x="601" y="265">New account</text>
   <text class="fl" x="450" y="464" text-anchor="middle">Recovery code</text>
 </svg>
 
-<p class="cap">Figure 4. Level 2 DFD Process 2.0 (Registration)</p>
+<p class="cap">Figure 3. Level 2 DFD Process 1.0 (Registration)</p>
 
 <h2 class="sec">Narrative Flow of Data</h2>
 <p class="narr">
-Registration starts when the End User opens the sign-up page; process 2.1 Enter Sign-Up Details
+Registration starts when the End User opens the sign-up page; process 1.1 Enter Sign-Up Details
 takes the sign-up details that the user types, such as an email address and a password. The
-completed form flows into 2.2 Submit Registration, which creates the account and sends the new
+completed form flows into 1.2 Submit Registration, which creates the account and sends the new
 account into D1 User Accounts. Once the account exists, the account created message moves to
-2.3 Display Recovery Code, which shows the one-time recovery code on the screen. The recovery code
+1.3 Display Recovery Code, which shows the one-time recovery code on the screen. The recovery code
 flows back to the End User, who is asked to keep it safe for recovering the account later. With the
 account safely stored in D1 User Accounts and the recovery code in the user's hands, the
 registration is complete.
 </p>
 
-<div class="ftr"><span>AgentA AI Skill Coach | Data Flow Diagrams</span><span>Page 4 of 9</span></div>
+<div class="ftr"><span>AgentA | Data Flow Diagrams</span><span>Page 3 of 7</span></div>
 
 </body>
 </html>

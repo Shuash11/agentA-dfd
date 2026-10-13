@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Figure 9 - Profile &amp; Account DFD - AgentA AI Skill Coach</title>
+<title>Figure 6 - Profile &amp; Account DFD (Process 4.0) - AgentA</title>
 <style>
   body { font-family: "Times New Roman", Georgia, serif; color:#000; background:#fff; max-width:1000px; margin:0 auto; padding:28px 32px; }
   .hdr { display:flex; justify-content:space-between; font-size:13px; padding-bottom:6px; border-bottom:1px solid #000; }
@@ -19,11 +19,11 @@
 </head>
 <body>
 
-<div class="hdr"><span>AgentA AI Skill Coach</span><span>Data Flow Diagrams</span></div>
+<div class="hdr"><span>AgentA</span><span>Data Flow Diagrams</span></div>
 
-<h1>LEVEL 2 DFD PROCESS 7.0 (PROFILE &amp; ACCOUNT)</h1>
+<h1>LEVEL 2 DFD PROCESS 4.0 (PROFILE &amp; ACCOUNT)</h1>
 
-<svg viewBox="0 0 900 660" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Level 2 DFD of process 7.0 Profile and Account">
+<svg viewBox="0 0 900 660" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Level 2 DFD of process 4.0 Profile and Account">
   <defs>
     <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L7,3 L0,6 z" fill="#000"/>
@@ -31,57 +31,55 @@
   </defs>
 
   <!-- End User (external entity, left edge) -->
-  <rect class="bp" x="30" y="190" width="100" height="330"/>
-  <text x="80" y="359" font-size="12" text-anchor="middle">End User</text>
+  <rect class="bp" x="30" y="214" width="120" height="56"/>
+  <text x="90" y="246" font-size="12" text-anchor="middle">End User</text>
 
-  <!-- Processes 7.1 - 7.6 -->
+  <!-- Processes 4.1 - 4.6 -->
   <g>
     <rect class="bp" x="230" y="210" width="150" height="64"/>
     <line class="bp" x1="230" y1="232" x2="380" y2="232"/>
-    <text x="239" y="226" font-size="10.5" font-weight="bold">7.1</text>
+    <text x="239" y="226" font-size="10.5" font-weight="bold">4.1</text>
     <text x="305" y="259" font-size="11.5" text-anchor="middle">View Profile</text>
   </g>
   <g>
     <rect class="bp" x="460" y="210" width="150" height="64"/>
     <line class="bp" x1="460" y1="232" x2="610" y2="232"/>
-    <text x="469" y="226" font-size="10.5" font-weight="bold">7.2</text>
+    <text x="469" y="226" font-size="10.5" font-weight="bold">4.2</text>
     <text x="535" y="259" font-size="11.5" text-anchor="middle">Edit Profile</text>
   </g>
   <g>
     <rect class="bp" x="690" y="210" width="150" height="64"/>
     <line class="bp" x1="690" y1="232" x2="840" y2="232"/>
-    <text x="699" y="226" font-size="10.5" font-weight="bold">7.3</text>
+    <text x="699" y="226" font-size="10.5" font-weight="bold">4.3</text>
     <text x="765" y="259" font-size="11.5" text-anchor="middle">Save Changes</text>
   </g>
   <g>
     <rect class="bp" x="690" y="430" width="150" height="64"/>
     <line class="bp" x1="690" y1="452" x2="840" y2="452"/>
-    <text x="699" y="446" font-size="10.5" font-weight="bold">7.4</text>
+    <text x="699" y="446" font-size="10.5" font-weight="bold">4.4</text>
     <text x="765" y="479" font-size="11.5" text-anchor="middle">Change Password</text>
   </g>
   <g>
     <rect class="bp" x="460" y="430" width="150" height="64"/>
     <line class="bp" x1="460" y1="452" x2="610" y2="452"/>
-    <text x="469" y="446" font-size="10.5" font-weight="bold">7.5</text>
+    <text x="469" y="446" font-size="10.5" font-weight="bold">4.5</text>
     <text x="535" y="479" font-size="11.5" text-anchor="middle">Delete Account</text>
   </g>
   <g>
     <rect class="bp" x="230" y="430" width="150" height="64"/>
     <line class="bp" x1="230" y1="452" x2="380" y2="452"/>
-    <text x="239" y="446" font-size="10.5" font-weight="bold">7.6</text>
+    <text x="239" y="446" font-size="10.5" font-weight="bold">4.6</text>
     <text x="305" y="479" font-size="11.5" text-anchor="middle">Confirm Deletion</text>
   </g>
 
   <!-- Data stores -->
   <g>
-    <rect class="bp" x="300" y="70" width="170" height="46"/>
-    <line class="bp" x1="340" y1="70" x2="340" y2="116"/>
+    <path class="bp" d="M300,70 H470 M300,116 H470 M300,70 V116 M340,70 V116"/>
     <text x="320" y="98" font-size="10.5" font-weight="bold" text-anchor="middle">D1</text>
     <text x="405" y="98" font-size="10.5" text-anchor="middle">User Accounts</text>
   </g>
   <g>
-    <rect class="bp" x="400" y="560" width="200" height="46"/>
-    <line class="bp" x1="440" y1="560" x2="440" y2="606"/>
+    <path class="bp" d="M400,560 H600 M400,606 H600 M400,560 V606 M440,560 V606"/>
     <text x="420" y="588" font-size="10.5" font-weight="bold" text-anchor="middle">D5</text>
     <text x="520" y="588" font-size="10.5" text-anchor="middle">Session</text>
   </g>
@@ -91,12 +89,12 @@
   <!-- Boundary flows -->
   <line class="flw" x1="330" y1="116" x2="330" y2="210" marker-end="url(#a)"/>
   <polyline class="flw" points="770,210 770,155 430,155 430,116" marker-end="url(#a)"/>
-  <line class="flw" x1="230" y1="240" x2="130" y2="240" marker-end="url(#a)"/>
-  <polyline class="flw" points="130,330 490,330 490,274" marker-end="url(#a)"/>
-  <polyline class="flw" points="130,400 650,400 650,445 690,445" marker-end="url(#a)"/>
-  <polyline class="flw" points="130,420 490,420 490,430" marker-end="url(#a)"/>
+  <line class="flw" x1="230" y1="240" x2="150" y2="240" marker-end="url(#a)"/>
+  <polyline class="flw" points="140,270 140,330 490,330 490,274" marker-end="url(#a)"/>
+  <polyline class="flw" points="100,270 100,400 650,400 650,445 690,445" marker-end="url(#a)"/>
+  <polyline class="flw" points="60,270 60,420 490,420 490,430" marker-end="url(#a)"/>
   <line class="flw" x1="535" y1="494" x2="535" y2="560" marker-end="url(#a)"/>
-  <line class="flw" x1="230" y1="462" x2="130" y2="462" marker-end="url(#a)"/>
+  <polyline class="flw" points="230,462 40,462 40,270" marker-end="url(#a)"/>
 
   <!-- Internal flows -->
   <line class="flw" x1="380" y1="242" x2="460" y2="242" marker-end="url(#a)"/>
@@ -108,7 +106,7 @@
   <!-- ============ FLOW LABELS ============ -->
   <text class="fl" x="336" y="165">Account details</text>
   <text class="fl" x="600" y="149" text-anchor="middle">Updated account</text>
-  <text class="fl" x="180" y="234" text-anchor="middle">Profile details</text>
+  <text class="fl" x="190" y="234" text-anchor="middle">Profile details</text>
   <text class="fl" x="330" y="324" text-anchor="middle">Profile changes</text>
   <text class="fl" x="390" y="394" text-anchor="middle">New password</text>
   <text class="fl" x="310" y="414" text-anchor="middle">Delete request</text>
@@ -121,22 +119,22 @@
   <text class="fl" x="420" y="456" text-anchor="middle">Deleted account</text>
 </svg>
 
-<p class="cap">Figure 9. Level 2 DFD Process 7.0 (Profile &amp; Account)</p>
+<p class="cap">Figure 6. Level 2 DFD Process 4.0 (Profile &amp; Account)</p>
 
 <h2 class="sec">Narrative Flow of Data</h2>
 <p class="narr">
-Profile management starts when process 7.1 View Profile reads the account details kept in
+Profile management starts when process 4.1 View Profile reads the account details kept in
 D1 User Accounts and shows the profile details to the End User. The opened profile moves to
-7.2 Edit Profile, where the End User changes the profile details and sends the profile changes.
-The changed profile flows into 7.3 Save Changes, which writes the updated account back into
-D1 User Accounts. The saved profile continues to 7.4 Change Password, where the End User enters a
-new password to update. The updated password moves to 7.5 Delete Account, where the End User can
+4.2 Edit Profile, where the End User changes the profile details and sends the profile changes.
+The changed profile flows into 4.3 Save Changes, which writes the updated account back into
+D1 User Accounts. The saved profile continues to 4.4 Change Password, where the End User enters a
+new password to update. The updated password moves to 4.5 Delete Account, where the End User can
 send a delete request; when the account is deleted, the cleared session is removed from
-D5 Session. Finally, the deleted account message goes to 7.6 Confirm Deletion, which shows the
+D5 Session. Finally, the deleted account message goes to 4.6 Confirm Deletion, which shows the
 confirmation to the End User.
 </p>
 
-<div class="ftr"><span>AgentA AI Skill Coach | Data Flow Diagrams</span><span>Page 9 of 9</span></div>
+<div class="ftr"><span>AgentA | Data Flow Diagrams</span><span>Page 6 of 7</span></div>
 
 </body>
 </html>
