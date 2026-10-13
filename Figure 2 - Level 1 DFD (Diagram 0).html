@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Figure 2 - Level 1 DFD (Diagram 0) - AgentA AI Skill Coach</title>
+<style>
+  body { font-family: "Times New Roman", Georgia, serif; color:#000; background:#fff; max-width:1180px; margin:0 auto; padding:28px 32px; }
+  .hdr { display:flex; justify-content:space-between; font-size:13px; padding-bottom:6px; border-bottom:1px solid #000; }
+  h1 { text-align:center; font-size:19px; letter-spacing:.5px; margin:20px 0 12px; }
+  .cap { text-align:center; font-style:italic; font-size:13px; margin:10px 0 22px; }
+  h2.sec { font-size:15px; margin:26px 0 8px; }
+  p.narr { font-size:13.5px; line-height:1.65; text-align:justify; margin:0; }
+  .ftr { display:flex; justify-content:space-between; font-size:12px; border-top:1px solid #000; margin-top:26px; padding-top:6px; }
+  svg text { font-family: Arial, Calibri, sans-serif; }
+  .fl { font-size:9.5px; fill:#000; paint-order: stroke; stroke:#ffffff; stroke-width:2.4px; stroke-linejoin: round; }
+  .bp { fill:none; stroke:#000; stroke-width:1.2; }
+  .flw { fill:none; stroke:#000; stroke-width:1.1; }
+</style>
+</head>
+<body>
+
+<div class="hdr"><span>AgentA AI Skill Coach</span><span>Data Flow Diagrams</span></div>
+
+<h1>LEVEL 1 DFD (DIAGRAM 0)</h1>
+
+<svg viewBox="0 0 1120 880" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Level 1 DFD of the AgentA system">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3 L0,6 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- ============ SHAPES ============ -->
+
+  <!-- End User (external entity, left edge) -->
+  <rect class="bp" x="30" y="80" width="120" height="700"/>
+  <text x="90" y="434" font-size="11.5" text-anchor="middle">End User</text>
+
+  <!-- Processes 1.0 - 7.0 (banded rectangles, ID in top band) -->
+  <g>
+    <rect class="bp" x="340" y="90" width="270" height="64"/>
+    <line class="bp" x1="340" y1="112" x2="610" y2="112"/>
+    <text x="350" y="106" font-size="10.5" font-weight="bold">1.0</text>
+    <text x="475" y="137" font-size="12.5" text-anchor="middle">Login</text>
+  </g>
+  <g>
+    <rect class="bp" x="340" y="192" width="270" height="64"/>
+    <line class="bp" x1="340" y1="214" x2="610" y2="214"/>
+    <text x="350" y="208" font-size="10.5" font-weight="bold">2.0</text>
+    <text x="475" y="239" font-size="12.5" text-anchor="middle">Registration</text>
+  </g>
+  <g>
+    <rect class="bp" x="340" y="294" width="270" height="64"/>
+    <line class="bp" x1="340" y1="316" x2="610" y2="316"/>
+    <text x="350" y="310" font-size="10.5" font-weight="bold">3.0</text>
+    <text x="475" y="341" font-size="12.5" text-anchor="middle">Forgot Password</text>
+  </g>
+  <g>
+    <rect class="bp" x="340" y="396" width="270" height="64"/>
+    <line class="bp" x1="340" y1="418" x2="610" y2="418"/>
+    <text x="350" y="412" font-size="10.5" font-weight="bold">4.0</text>
+    <text x="475" y="443" font-size="12.5" text-anchor="middle">Chat</text>
+  </g>
+  <g>
+    <rect class="bp" x="340" y="498" width="270" height="64"/>
+    <line class="bp" x1="340" y1="520" x2="610" y2="520"/>
+    <text x="350" y="514" font-size="10.5" font-weight="bold">5.0</text>
+    <text x="475" y="545" font-size="12.5" text-anchor="middle">Image Generation</text>
+  </g>
+  <g>
+    <rect class="bp" x="340" y="600" width="270" height="64"/>
+    <line class="bp" x1="340" y1="622" x2="610" y2="622"/>
+    <text x="350" y="616" font-size="10.5" font-weight="bold">6.0</text>
+    <text x="475" y="647" font-size="12.5" text-anchor="middle">Model Download</text>
+  </g>
+  <g>
+    <rect class="bp" x="340" y="702" width="270" height="64"/>
+    <line class="bp" x1="340" y1="724" x2="610" y2="724"/>
+    <text x="350" y="718" font-size="10.5" font-weight="bold">7.0</text>
+    <text x="475" y="749" font-size="12.5" text-anchor="middle">Profile &amp; Account</text>
+  </g>
+
+  <!-- Data stores (near column): D2, D3, D4 -->
+  <g>
+    <rect class="bp" x="700" y="350" width="140" height="46"/>
+    <line class="bp" x1="742" y1="350" x2="742" y2="396"/>
+    <text x="721" y="378" font-size="10.5" font-weight="bold" text-anchor="middle">D2</text>
+    <text x="791" y="378" font-size="11" text-anchor="middle">Chats</text>
+  </g>
+  <g>
+    <rect class="bp" x="700" y="445" width="140" height="46"/>
+    <line class="bp" x1="742" y1="445" x2="742" y2="491"/>
+    <text x="721" y="473" font-size="10.5" font-weight="bold" text-anchor="middle">D3</text>
+    <text x="791" y="473" font-size="11" text-anchor="middle">Messages</text>
+  </g>
+  <g>
+    <rect class="bp" x="700" y="540" width="140" height="46"/>
+    <line class="bp" x1="742" y1="540" x2="742" y2="586"/>
+    <text x="721" y="568" font-size="10.5" font-weight="bold" text-anchor="middle">D4</text>
+    <text x="791" y="568" font-size="11" text-anchor="middle">AI Model</text>
+  </g>
+
+  <!-- External entities + remaining stores (right edge column) -->
+  <g>
+    <rect class="bp" x="880" y="80" width="160" height="48"/>
+    <line class="bp" x1="922" y1="80" x2="922" y2="128"/>
+    <text x="901" y="109" font-size="10.5" font-weight="bold" text-anchor="middle">D5</text>
+    <text x="981" y="109" font-size="11" text-anchor="middle">Session</text>
+  </g>
+  <g>
+    <rect class="bp" x="880" y="140" width="160" height="48"/>
+    <line class="bp" x1="922" y1="140" x2="922" y2="188"/>
+    <text x="901" y="169" font-size="10.5" font-weight="bold" text-anchor="middle">D1</text>
+    <text x="981" y="169" font-size="11" text-anchor="middle">User Accounts</text>
+  </g>
+  <rect class="bp" x="880" y="250" width="160" height="52"/>
+  <text x="960" y="281" font-size="12.5" text-anchor="middle">Email</text>
+  <rect class="bp" x="880" y="400" width="160" height="260"/>
+  <text x="960" y="534" font-size="12.5" text-anchor="middle">AI Service (Online)</text>
+
+  <!-- Device (external entity, bottom-left corner) -->
+  <rect class="bp" x="30" y="800" width="130" height="44"/>
+  <text x="95" y="827" font-size="12" text-anchor="middle">Device</text>
+
+  <!-- ============ FLOWS ============ -->
+
+  <!-- End User fan (21 straight arrows) -->
+  <line class="flw" x1="150" y1="100" x2="340" y2="108" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="132" x2="150" y2="116" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="196" x2="340" y2="212" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="240" x2="150" y2="216" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="286" x2="340" y2="306" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="298" x2="340" y2="318" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="310" x2="340" y2="330" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="350" x2="150" y2="332" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="396" x2="340" y2="412" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="426" x2="150" y2="416" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="440" x2="150" y2="428" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="500" x2="340" y2="514" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="544" x2="150" y2="522" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="600" x2="340" y2="614" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="630" x2="150" y2="616" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="648" x2="150" y2="628" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="698" x2="340" y2="712" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="710" x2="340" y2="724" marker-end="url(#a)"/>
+  <line class="flw" x1="150" y1="722" x2="340" y2="736" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="752" x2="150" y2="740" marker-end="url(#a)"/>
+  <line class="flw" x1="340" y1="760" x2="150" y2="752" marker-end="url(#a)"/>
+
+  <!-- Upper right: 1.0 - 3.0 with D1, D5, Email -->
+  <line class="flw" x1="610" y1="100" x2="880" y2="92" marker-end="url(#a)"/>
+  <line class="flw" x1="880" y1="110" x2="610" y2="118" marker-end="url(#a)"/>
+  <line class="flw" x1="880" y1="150" x2="610" y2="136" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="210" x2="880" y2="164" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="302" x2="880" y2="178" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="316" x2="880" y2="268" marker-end="url(#a)"/>
+  <line class="flw" x1="880" y1="290" x2="610" y2="334" marker-end="url(#a)"/>
+
+  <!-- Middle: 4.0, 5.0, 6.0 with D2, D3, D4 and the AI Service -->
+  <line class="flw" x1="610" y1="399" x2="700" y2="375" marker-end="url(#a)"/>
+  <line class="flw" x1="700" y1="390" x2="610" y2="407" marker-end="url(#a)"/>
+  <line class="flw" x1="880" y1="412" x2="610" y2="415" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="423" x2="880" y2="426" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="431" x2="700" y2="455" marker-end="url(#a)"/>
+  <line class="flw" x1="700" y1="470" x2="610" y2="439" marker-end="url(#a)"/>
+  <line class="flw" x1="700" y1="550" x2="610" y2="447" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="505" x2="700" y2="480" marker-end="url(#a)"/>
+  <line class="flw" x1="880" y1="514" x2="610" y2="520" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="535" x2="880" y2="528" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="610" x2="700" y2="572" marker-end="url(#a)"/>
+  <line class="flw" x1="880" y1="628" x2="610" y2="625" marker-end="url(#a)"/>
+  <line class="flw" x1="610" y1="640" x2="880" y2="640" marker-end="url(#a)"/>
+
+  <!-- Deleting a chat removes it from D2: from 4.0's top edge, through the open corridor above 4.0, into D2's left edge -->
+  <polyline class="flw" points="450,396 450,363 700,363" marker-end="url(#a)"/>
+
+  <!-- Long store links to 7.0, run along the right page margin (outside all boxes) -->
+  <polyline class="flw" points="1040,152 1074,152 1074,846 640,846 640,750 610,750" marker-end="url(#a)"/>
+  <polyline class="flw" points="610,734 652,734 652,836 1064,836 1064,176 1040,176" marker-end="url(#a)"/>
+  <polyline class="flw" points="610,718 664,718 664,826 1054,826 1054,104 1040,104" marker-end="url(#a)"/>
+
+  <!-- Sign-out inside 1.0 clears the saved session: short run through the top margin into D5 -->
+  <polyline class="flw" points="595,90 595,60 920,60 920,80" marker-end="url(#a)"/>
+
+  <!-- Device links to 1.0, run along the left page margin (outside all boxes) -->
+  <polyline class="flw" points="30,812 13,812 13,58 460,58 460,90" marker-end="url(#a)"/>
+  <polyline class="flw" points="500,90 500,72 26,72 26,830 30,830" marker-end="url(#a)"/>
+
+  <!-- ============ FLOW LABELS ============ -->
+
+  <!-- End User fan labels -->
+  <text class="fl" x="245" y="100" text-anchor="middle">Sign-in details</text>
+  <text class="fl" x="245" y="121" text-anchor="middle">Sign-in confirmation</text>
+  <text class="fl" x="245" y="200" text-anchor="middle">Sign-up details</text>
+  <text class="fl" x="245" y="225" text-anchor="middle">Recovery code</text>
+  <text class="fl" x="245" y="292" text-anchor="middle">Email address</text>
+  <text class="fl" x="245" y="304" text-anchor="middle">One-time code</text>
+  <text class="fl" x="245" y="316" text-anchor="middle">New password</text>
+  <text class="fl" x="245" y="338" text-anchor="middle">Password changed</text>
+  <text class="fl" x="245" y="400" text-anchor="middle">Chat message</text>
+  <text class="fl" x="245" y="418" text-anchor="middle">AI reply</text>
+  <text class="fl" x="245" y="431" text-anchor="middle">Chat history</text>
+  <text class="fl" x="245" y="503" text-anchor="middle">Image prompt</text>
+  <text class="fl" x="245" y="530" text-anchor="middle">Generated image</text>
+  <text class="fl" x="245" y="603" text-anchor="middle">Download request</text>
+  <text class="fl" x="245" y="620" text-anchor="middle">Download progress</text>
+  <text class="fl" x="245" y="635" text-anchor="middle">Model ready</text>
+  <text class="fl" x="245" y="701" text-anchor="middle">Profile changes</text>
+  <text class="fl" x="245" y="713" text-anchor="middle">New password</text>
+  <text class="fl" x="245" y="725" text-anchor="middle">Delete request</text>
+  <text class="fl" x="245" y="743" text-anchor="middle">Profile details</text>
+  <text class="fl" x="245" y="753" text-anchor="middle">Confirmation</text>
+
+  <!-- Upper right labels -->
+  <text class="fl" x="745" y="92" text-anchor="middle">New session</text>
+  <text class="fl" x="745" y="110" text-anchor="middle">Saved session</text>
+  <text class="fl" x="745" y="139" text-anchor="middle">Account details</text>
+  <text class="fl" x="745" y="183" text-anchor="middle">New account</text>
+  <text class="fl" x="745" y="236" text-anchor="middle">Updated password</text>
+  <text class="fl" x="745" y="288" text-anchor="middle">Code request</text>
+  <text class="fl" x="745" y="320" text-anchor="middle">One-time code</text>
+
+  <!-- Middle labels -->
+  <text class="fl" x="655" y="357" text-anchor="middle">Deleted chat</text>
+  <text class="fl" x="655" y="380" text-anchor="middle">New chat</text>
+  <text class="fl" x="655" y="391" text-anchor="middle">Chat list</text>
+  <text class="fl" x="655" y="410" text-anchor="middle">AI reply</text>
+  <text class="fl" x="655" y="421" text-anchor="middle">Chat request</text>
+  <text class="fl" x="655" y="439" text-anchor="middle">New messages</text>
+  <text class="fl" x="655" y="452" text-anchor="middle">Message history</text>
+  <text class="fl" x="655" y="489" text-anchor="middle">Saved image</text>
+  <text class="fl" x="655" y="503" text-anchor="middle">Offline AI model</text>
+  <text class="fl" x="655" y="515" text-anchor="middle">Generated image</text>
+  <text class="fl" x="655" y="529" text-anchor="middle">Image request</text>
+  <text class="fl" x="655" y="588" text-anchor="middle">Saved model</text>
+  <text class="fl" x="655" y="622" text-anchor="middle">AI model file</text>
+  <text class="fl" x="655" y="637" text-anchor="middle">Model file request</text>
+
+  <!-- Long link labels (near 7.0) -->
+  <text class="fl" x="616" y="745">Account details</text>
+  <text class="fl" x="616" y="729">Updated account</text>
+  <text class="fl" x="616" y="713">Cleared session</text>
+
+  <!-- Device link labels -->
+  <text class="fl" x="395" y="68" text-anchor="middle">Unlock request</text>
+  <text class="fl" x="320" y="54" text-anchor="middle">Unlock result</text>
+
+  <!-- Sign-out link label -->
+  <text class="fl" x="760" y="56" text-anchor="middle">Cleared session</text>
+</svg>
+
+<p class="cap">Figure 2. Level 1 DFD (Diagram 0) of the AgentA System</p>
+
+<h2 class="sec">Narrative Flow of Data</h2>
+<p class="narr">
+To use AgentA, the End User signs in through process 1.0 Login, which checks account details in
+D1 User Accounts and asks the Device for a biometric unlock; the active session is kept in
+D5 Session, can be restored while it is still saved, and is cleared again when the user signs out. New users go through 2.0 Registration,
+which stores a new account in D1 User Accounts and returns a one-time recovery code to the End User.
+If a password is forgotten, 3.0 Forgot Password sends a code request to Email, the End User enters
+the one-time code and a new password, and the updated password is written back to D1 User Accounts.
+Signed-in users chat through 4.0 Chat, which saves every new chat in D2 Chats and every new message
+in D3 Messages; deleting a chat removes it from D2 Chats; when the connection is online the chat request goes to the AI Service (Online),
+which returns the AI reply, and when offline the reply comes from the offline AI model held in
+D4 AI Model. Image requests pass through 5.0 Image Generation, which asks the AI Service for the
+picture and saves the finished image in D3 Messages so it stays part of the chat. On first use,
+6.0 Model Download fetches the AI model file from the AI Service, shows download progress to the
+End User, and saves the model in D4 AI Model until it is ready. Finally, 7.0 Profile &amp; Account
+sends profile changes and a new password to D1 User Accounts, and confirms every change back to the
+End User; deleting the account also clears the saved session from D5 Session.
+</p>
+
+<div class="ftr"><span>AgentA AI Skill Coach | Data Flow Diagrams</span><span>Page 2 of 9</span></div>
+
+</body>
+</html>
